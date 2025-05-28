@@ -172,8 +172,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.7862595419847328,
-            "y": 0.5143603133159269,
+            "x": 0.7156084656084657,
+            "y": 0.49860724233983283,
             "uniqueID": 1735934631069,
             "ioValues": [
                 {
@@ -183,23 +183,6 @@
             ],
             "description": "Changes the color of the shape.",
             "selectedColorIndex": 18
-        },
-        {
-            "atomType": "Tag",
-            "name": "",
-            "x": 0.623409669211196,
-            "y": 0.5874673629242819,
-            "uniqueID": 1748389113950,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": ""
-                }
-            ],
-            "description": "Tags geometry so that it can be extracted later.",
-            "tags": [
-                ""
-            ]
         }
     ],
     "allConnectors": [
