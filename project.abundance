@@ -4,6 +4,13 @@
   "y": 0,
   "uniqueID": 1735934311384,
   "name": "-6-Wood-Screw",
+  "ioValues": [
+    {
+      "name": "Length",
+      "ioValue": 1.25,
+      "currentEquation": "1.25"
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
@@ -32,13 +39,14 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.10714285714285714,
-      "y": 0.32869080779944293,
+      "x": 0.1097883597883598,
+      "y": 0.3746397694524496,
       "uniqueID": 1735934467634,
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 8.5
+          "ioValue": 8.5,
+          "currentEquation": "8.5"
         }
       ]
     },
@@ -252,6 +260,13 @@
           "ioValue": 10
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.4812680115273775,
+      "uniqueID": "id-36",
+      "name": "Length"
     }
   ],
   "allConnectors": [
