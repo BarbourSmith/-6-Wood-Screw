@@ -27,8 +27,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.0787037037037037,
-      "y": 0.6908077994428969,
+      "x": 0.1349206349206349,
+      "y": 0.5706051873198847,
       "uniqueID": 1735934457460,
       "ioValues": [
         {
@@ -165,7 +165,7 @@
         },
         {
           "name": "height",
-          "ioValue": -35
+          "ioValue": -27.75
         }
       ]
     },
@@ -190,8 +190,8 @@
     },
     {
       "atomType": "Add-BOM-Tag",
-      "x": 0.59439406430338,
-      "y": 0.45317220543806647,
+      "x": 0.58994708994709,
+      "y": 0.17579250720461095,
       "uniqueID": 1735934614580,
       "name": "Add BOM Tag",
       "ioValues": [
@@ -201,7 +201,7 @@
         },
         {
           "name": "Item Name",
-          "ioValue": "#6 Screw",
+          "ioValue": "1.25in screw",
           "currentEquation": "#6 Screw"
         },
         {
@@ -218,7 +218,7 @@
         }
       ],
       "BOMitem": {
-        "BOMitemName": "#6 Screw",
+        "BOMitemName": "1.25in screw",
         "numberNeeded": 1,
         "costUSD": 0,
         "source": ""
@@ -267,6 +267,34 @@
       "y": 0.4812680115273775,
       "uniqueID": "id-36",
       "name": "Length"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.08068783068783068,
+      "y": 0.21613832853025935,
+      "uniqueID": "id-39",
+      "name": "L + \"in screw\"",
+      "ioValues": [
+        {
+          "name": "L",
+          "ioValue": 1.25
+        }
+      ],
+      "currentEquation": "L + \"in screw\""
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.19113756613756613,
+      "y": 0.8904899135446686,
+      "uniqueID": "id-44",
+      "name": "-1(L*25.4-4)",
+      "ioValues": [
+        {
+          "name": "L",
+          "ioValue": 1.25
+        }
+      ],
+      "currentEquation": "-1(L*25.4-4)"
     }
   ],
   "allConnectors": [
@@ -314,6 +342,26 @@
       "ap2Name": "number or geometry",
       "ap1ID": 1735934631069,
       "ap2ID": 1735934453239
+    },
+    {
+      "ap2Name": "L",
+      "ap1ID": "id-36",
+      "ap2ID": "id-39"
+    },
+    {
+      "ap2Name": "L",
+      "ap1ID": "id-36",
+      "ap2ID": "id-44"
+    },
+    {
+      "ap2Name": "Item Name",
+      "ap1ID": "id-39",
+      "ap2ID": 1735934614580
+    },
+    {
+      "ap2Name": "height",
+      "ap1ID": "id-44",
+      "ap2ID": 1735934581132
     }
   ],
   "unitsKey": "MM",
